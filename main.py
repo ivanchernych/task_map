@@ -25,7 +25,7 @@ def user_show(user_id):
         map_file = "static/img/map.png"
         with open(map_file, "wb") as file:
             file.write(response.content)
-    return flask.render_template('base.html', title='map', name=name_surname)
+    return flask.render_template('base.html', title='map', name=name_surname, city=city)
 
 
 if __name__ == '__main__':
